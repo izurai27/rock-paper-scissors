@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+ 
+</head>
+
+<body>
+
+  
+  
+  <div id="ruleScreen">
+    <p>RULES</p>
+    <img class="ilustration" src="/images/image-rules.svg" alt="rules-image">
+    <img id="closeBtn" src="/images/icon-close.svg">
+  </div>
+
+  <header>
+    <!-- <h1>Rock<br> Paper<br> Scissors</h1> -->
+    <div class="logo">
+      <img src="/images/logo.svg" alt="logo">
+    </div>
+    <div class="scorebox">
+      <div class="scorelabel">score</div>
+      <div class="score">12</div>
+    </div>
+  </header>
+
+  <div class="choice-block">
+    <div data-attribute="paper" class="choice paper circle">
+      <img src="/images/icon-paper.svg" alt="icon-paper">
+    </div>
+    <div data-attribute="scissor" class="choice scissors circle">
+      <img src="/images/icon-scissors.svg" alt="icon-scissors">
+    </div>
+    <div data-attribute="hand" class="choice hand circle">
+      <img src="/images/icon-rock.svg" alt="icon-rock">
+    </div>
+    
+  </div>
+
+  
+  <div class="second-screen">
+    <div class="result">
+     
+      <div class="left">
+        <div class="user">
+          <!-- <div class="circle-bg"> -->
+            <div>
+              <div id="user-paper" class="paper circle">
+                <img src="/images/icon-paper.svg" alt="icon-paper">
+              </div>
+              <div id="user-scissor" class="scissors circle">
+                <img src="/images/icon-scissors.svg" alt="icon-scissors">
+              </div>
+              <div id="user-hand" class="hand circle">
+                <img src="/images/icon-rock.svg" alt="icon-rock">
+              </div>
+            </div>
+            <div class="circle-bg"></div>
+          <!-- </div> -->
+        </div>
+        <p>You Picked</p>
+      </div>
+
+      <div class="right">
+        <div class="house">
+          <div id="house-blank circle"></div>
+          <div id="house-paper" class="paper circle" >
+            <img src="/images/icon-paper.svg" alt="icon-paper">
+          </div>
+          <div id="house-scissor" class="scissors circle">
+            <img src="/images/icon-scissors.svg" alt="icon-scissors">
+          </div>
+          <div id="house-hand" class="hand circle">
+            <img src="/images/icon-rock.svg" alt="icon-rock">
+          </div>
+          <div class="circle-bg2"></div>
+          
+          
+        </div>
+        <p> The House Picked</p>
+      </div>
+      
+      <div class="bottomsecond">
+        <div class="result-text">YOU WIN</div>
+        <button class="play-again">PLAY AGAIN</button>
+      </div>
+      
+    </div>
+  </div>
+  
+  <div class="rules">RULES</div>
+  
+  <script src="app.js"></script>
+  
+</body>
+</html>
