@@ -131,7 +131,6 @@ header{
     width:makeVW(132,375 );
     height: makeVW(128,375 );
     border-radius:100%;
-    border:1px solid yellowgreen;
     background-color: #E7E7E7;
     display:flex;
     justify-content: center;
@@ -175,8 +174,8 @@ header{
     width:makeVW(321,375 );
     height: makeVW(426,750 );
     margin:auto;
-    // display: block;
-    display:none;
+    display: block;
+    // display:none;
     margin-top:94px;
     text-align: center;
     margin-bottom:51px;
@@ -193,7 +192,7 @@ header{
         position:relative;
         z-index:999;
         margin-top:0;
-        display:none;
+        // display:none;
 
         .left, .right {
             text-align: center;
@@ -222,8 +221,8 @@ header{
             grid-area:house;
 
             #house-blank{
-                width:110px;
-                height:110px;
+                // width:110px;
+                // height:110px;
                 border-radius:100%;
                 background-color: #192845;
             }
@@ -450,10 +449,10 @@ header{
             
     //         display:grid;
             grid-template-areas:'user info house';
-    //                             
+            column-gap: 20px;                       
     //         margin:auto;
     //         justify-content: space-between;
-    //         align-items:flex-start;
+            align-items:center;
     //         position:relative;
     //         z-index:999;
     //         margin-top:0;

@@ -141,7 +141,6 @@ header .scorebox .score {
   width: 35.2vw;
   height: 34.13333vw;
   border-radius: 100%;
-  border: 1px solid yellowgreen;
   background-color: #E7E7E7;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -195,7 +194,7 @@ header .scorebox .score {
   width: 85.6vw;
   height: 56.8vw;
   margin: auto;
-  display: none;
+  display: block;
   margin-top: 94px;
   text-align: center;
   margin-bottom: 51px;
@@ -215,7 +214,6 @@ header .scorebox .score {
   position: relative;
   z-index: 999;
   margin-top: 0;
-  display: none;
 }
 
 .second-screen .result .left, .second-screen .result .right {
@@ -260,8 +258,6 @@ header .scorebox .score {
 }
 
 .second-screen .result .right #house-blank {
-  width: 110px;
-  height: 110px;
   border-radius: 100%;
   background-color: #192845;
 }
@@ -445,6 +441,11 @@ header .scorebox .score {
   }
   .second-screen .result {
         grid-template-areas: 'user info house';
+    -webkit-column-gap: 20px;
+            column-gap: 20px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .second-screen .result .left, .second-screen .result .right {
     -webkit-box-orient: vertical;

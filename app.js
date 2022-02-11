@@ -23,17 +23,17 @@ choice.forEach(item => {
         
         document.querySelector(`#user-${userChoice}`).style.display="flex";
         
+
         randomNumber = Math.floor(Math.random()*3);
         houseChoice = ["paper", "hand", "scissor"][randomNumber];
-        
-        
+                
         setTimeout(()=>{
             houseBlank.style.display="none";
             document.querySelector(`#house-${houseChoice}`).style.display="flex";
-            
+            console.log(document.querySelector(`#house-${userChoice}`).style.display);
             resultText(userChoice,houseChoice);
             playAgain.style.display = "block";
-        }, 300000);
+        }, 500);
 
         
     });
