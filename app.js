@@ -31,6 +31,7 @@ choice.forEach(item => {
             houseBlank.style.display="none";
             document.querySelector(`#house-${houseChoice}`).style.display="flex";
             console.log(document.querySelector(`#house-${userChoice}`).style.display);
+            document.querySelector('.result').style.display="grid";
             resultText(userChoice,houseChoice);
             playAgain.style.display = "block";
         }, 500);

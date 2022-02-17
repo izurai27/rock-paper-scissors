@@ -21,8 +21,8 @@ body{
 }
 
 #ruleScreen{
-    width:100%;
-    height:100%;
+    width:100vw;
+    height:100vh;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -31,7 +31,7 @@ body{
     position:absolute;
     top:0;
     left:0;
-    z-index: 999;
+    z-index: 99999;
     margin:0;
     padding-top:makeVW(101,375 );
     padding-bottom: makeVW(67,375 );
@@ -95,6 +95,11 @@ header{
    
 } 
 
+
+.wrapper{
+    display:flex;
+    flex-direction: column;
+}
 
 .choice-block{
     width: makeVW(312, 375);
@@ -172,10 +177,10 @@ header{
 
 .second-screen{
     width:makeVW(321,375 );
-    height: makeVW(426,750 );
+    // height: makeVW(426,750 );
     margin:auto;
-    display: block;
-    // display:none;
+    // display: block;
+    display:none;
     margin-top:94px;
     text-align: center;
     margin-bottom:51px;
@@ -192,7 +197,7 @@ header{
         position:relative;
         z-index:999;
         margin-top:0;
-        // display:none;
+        display:none;
 
         .left, .right {
             text-align: center;
