@@ -17,7 +17,7 @@ body {
 
 #ruleScreen {
   width: 100vw;
-  height: 100vh;
+  min-height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -46,7 +46,8 @@ body {
 }
 
 #ruleScreen .ilustration {
-  width: 100%;
+  margin-bottom: 30px;
+  width: 60%;
   height: auto;
 }
 
